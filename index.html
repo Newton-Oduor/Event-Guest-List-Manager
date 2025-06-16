@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Guest List Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Division class for easier styling & layout -->
+  <div class="guestBox">
+    <!-- Page Heading -->
+    <h1>Guest List</h1>
+    <!-- Form for the guest info (the id for JS to locate and use) -->
+    <form id="guestForm">
+      <input type="text" id="guestName" placeholder="Type guest name" required />
+      <!-- Select (option) is for the drop down menu & id category allows JS to know the category picked -->
+      <select id="guestCategory">
+        <option value="Friend">Friend</option>
+        <option value="Family">Family</option>
+        <option value="Colleague">Colleague</option>
+      </select>
+      <!-- Button that submits the form when clicked -->
+      <button type="submit">Add Guest</button>
+    </form>
+    <!-- Empty list where the guests names will appear -->
+    <ul id="guestList"></ul>
+  </div>
+  <!-- Link to JS -->
+  <script src="src/index.js"></script>
+</body>
+</html>
